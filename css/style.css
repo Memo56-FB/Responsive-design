@@ -434,12 +434,12 @@ margin: 0 auto;
 }
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 60%;
     min-width: 190px;
     max-width: 320px;
-    /* height: 250px; */
-    height: auto;
-    margin: 50px auto 0;
+    height: 250px;
+    margin: 50px 60px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     box-shadow: 0px 4px 8px 0px rgba(0, 4, 8, 0.16);
@@ -496,7 +496,6 @@ margin: 0 auto;
     padding: 15px 48px 15px 16px;
     border: 2px solid var(--bitcoin-orange);
     border-radius:4px ;
-    margin-bottom: 40px;
 }
 .plan-card--ca span{
     position: absolute;
@@ -507,4 +506,13 @@ margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+/* SLIDEBAR */
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x:scroll ;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }

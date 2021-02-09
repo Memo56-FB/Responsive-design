@@ -76,6 +76,7 @@ header img{
     margin-top: 32px;
     top: 270px;
     width: 229px;
+    min-width: 229px;
     height: 48px;
     background-color: var(--off-white);
     color: var(--warm-black);

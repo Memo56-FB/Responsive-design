@@ -106,11 +106,12 @@ header img{
 }
 
 
-main section:first-child{
+.main-exchange-container{
     display: flex;
     align-items:center ;
     flex-direction: column;
-    height: 778px;
+    /* height: 778px; */
+    height: auto;
     width: 100vw;
     min-width: 320px;
     background-color: var(--just-white);
@@ -122,8 +123,9 @@ main section:first-child{
 }
 .section--title-container{
     width: 90%;
-    position: relative;
-    top: 40px;
+    min-width: 288px;
+    max-width: 900px;
+    margin-top: 40px;
 }
 .section__subtitle{
     /* Width: 288px; */
@@ -141,4 +143,130 @@ main section:first-child{
     font-size: 1.4rem;
     line-height: 18px;
     text-align: center;
+    color: #757575;
+    margin-bottom: 48px;
+}
+.main-tables-container{
+    position: relative;
+}
+
+.main-comision-table{
+    margin-top: 0;
+}
+
+.main-currency-table,
+.main-comision-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    font-family:"Inter", sans-serif ;
+}
+.main-currency-table .currency-table--title{
+    margin-bottom: 22px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 23px;
+    color: var(--bitcoin-orange);
+}
+.main-comision-table .comision-table--title{
+    margin-bottom: 22px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 23px;
+    color: var(--secondary-blue);
+}
+
+.currency-table--container,.comision-table--container{
+width: 90%;
+min-width: 230;
+max-width: 300px;
+/* height: 180px; */
+margin: 0 auto;
+}
+.currency-table--container table,
+.comision-table--container table{
+    width: 100%;
+    height: 101px;
+}
+.currency-table--container td,
+.comision-table--container td{
+    width: 50%;
+    padding: 10px 12px; 
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+}
+
+.currency-table--container .table__right,
+.comision-table--container .table__right{
+    padding: 11px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+    font-family: "Inter";
+}
+
+.trending-down{
+    display: inline-block;
+    margin-left: 10.5px;
+    width: 11px;
+    height: 6px;
+    background-image: url("../assets/icon/trending-down.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.trending-up{
+    display: inline-block;
+    margin-left: 10.5px;
+    width: 11px;
+    height: 6px;
+    background-image: url("../assets/icon/trending-up.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.arrow-right{
+    position: absolute;
+    right: 0;
+    top: calc(35% - 5px);
+    width: 20px;
+    height: 10px;
+    background-image: url("../assets/icon/mdi_keyboard_arrow_down.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.currency-table-date{
+    width: 190px;
+    height: 31;
+    padding: 8px;
+    background-color:var(--soft-orange);
+    color: var(--warm-black);
+    /* margin-top:16px;  */
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 16px auto 0;
+    border-radius: 8px;
+
+}
+.comision-table-date{
+    width: 190px;
+    height: 31;
+    padding: 8px;
+    background-color:var(--soft-blue);
+    color: var(--warm-black);
+    /* margin-top:16px;  */
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 16px auto 0;
+    border-radius: 8px;
 }

@@ -520,6 +520,7 @@ margin: 0 auto;
     width: 200px;
     max-width: 200px;
     display: flex;
+    align-items: center;
     height: 316px;
     overflow-y: visible;
     overflow-x: scroll;
